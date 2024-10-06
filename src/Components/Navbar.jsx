@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import SearchBar from './SearchBar';
+
 
 const Navbar = () => {
   return (
@@ -11,7 +11,7 @@ const Navbar = () => {
         <li><Link to="/contact" style={styles.link}>Contact</Link></li>
         <li className="nav-contact"><Link to="/contact" style={styles.link}>Contact</Link></li>
       </ul>
-      <SearchBar />
+
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Components/Navbar";
-import Home from "./Components/Pages/Home/home";
-import About from "./Components/Pages/About/about";
-import Contact from "./Components/Pages/Contact/contact";
+import Navbar from "./Components/Navbar.jsx";
+import Home from "./Components/Pages/Home/home.jsx";
+import About from "./Components/Pages/About/about.jsx";
+import Contact from "./Components/Pages/Contact/contact.jsx";
 import Background from "./Components/Background.jsx";
-import Lala from "./Components/lala"; 
+import Lala from "./Components/lala.jsx"; 
 
 const App = () => {
   const lalaData = [
