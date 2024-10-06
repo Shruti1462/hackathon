@@ -1,9 +1,9 @@
 import './lala.css';
-import arrow_btn from '../../assets/arrow_icon.jpg';
-import search_icon from '../../assets/search_icon.png';
-import bell_icon from '../../assets/bell_icon.jpeg';
-import play_icon from '../../assets/play_icon.jpeg';
-import pause_icon from '../../assets/pause_icon.jpeg';
+import arrow_icon from '../assets/arrow_icon.jpg';
+import search_icon from '../assets/search_icon.png';
+import bell_icon from '../assets/bell_icon.jpeg';
+import playicon from '../assets/playicon.jpg';
+import pauseicon from '../assets/pauseicon.jpg';
 import PropTypes from 'prop-types'; // Import PropTypes
 
 const Lala = ({ lalaData, setPlayStatus, lalaCount, setLalaCount, PlayStatus }) => {
@@ -26,7 +26,7 @@ const Lala = ({ lalaData, setPlayStatus, lalaCount, setLalaCount, PlayStatus }) 
       
       <div className='lala-about'>
         <p>Explore the features</p>
-        <img src={arrow_btn} alt="Arrow icon"/>
+        <img src={arrow_icon} alt="Arrow icon"/>
       </div>
       
       <div className='lala-dot-play'>
@@ -39,7 +39,7 @@ const Lala = ({ lalaData, setPlayStatus, lalaCount, setLalaCount, PlayStatus }) 
         <div className='lala-play'>
           <img 
             onClick={handlePlayPause} 
-            src={PlayStatus ? pause_icon : play_icon} 
+            src={PlayStatus ? pauseicon : playicon} 
             alt={PlayStatus ? "Pause icon" : "Play icon"} 
           />
         </div>
